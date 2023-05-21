@@ -1,0 +1,35 @@
+﻿@model Customer
+<div class="row mt-3">
+    <div class="col-md-10">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-text">Delete Record</h5>
+            </div>
+            <div class="card-body">
+                <strong>Customer Id:</strong> @Model.Customer_Id
+                <br />
+                <strong>Customer Name:</strong> @Model.Customer_Name
+                <br />
+                <strong>Customer Email:</strong> @Model.Customer_Email
+                <br />
+                <strong>Customer Phone:</strong> @Model.Customer_Phone
+            </div>
+            <div class="card-footer d-flex">
+                <h3 class="me-2">ARE YOU SURE YOU WANT TO DELETE THIS RECORD</h3>
+
+                <form method="post" asp-action="DeleteUser" asp-route-Id="@Model.Customer_Id" class="d-flex" >
+
+                
+                <button class="btn btn-danger me-2" style = "width:80px;" type="submit" > YES </button>
+                </form>
+
+
+
+                <a class="btn btn-success" asp-action="Index" style="width:80px;">No</a>
+
+                
+                
+            </div>
+        </div>
+    </div>
+</div>

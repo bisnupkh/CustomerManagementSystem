@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+   
+
+</head>
+<body >
+    <div class="container-fluid">
+       <div class="row">
+
+      
+        <navbar class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+           <div class="container-fluid">
+               <a class="navbar-brand">
+                 <img src=".\images\images.jpeg" width="50px", height="50px"/>
+               </a>
+               <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navdiv"><span class="navbar-toggler-icon"></span></button>
+               <div class="collapse navbar-collapse" id="navdiv">
+
+               
+               <ul class="navbar-nav me-auto">
+                   
+                       <li class="nav-item">
+                           <a href="#" class="nav-link" active>Home</a>
+                       </li>
+
+                    <li class="nav-item">
+                        <a asp-action="CreateUser" class="nav-link">Create User</a>
+                    </li>
+
+                </ul>
+                <form asp-action="SearchUser" class="d-flex" method="get">
+                        <input class="form-control me-3 " type="text" placeholder="Search By Name" name="CustomerName" />
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
+
+                </div>
+             </div>
+
+       </navbar>
+        </div>
+        
+        
+        @RenderBody()
+    </div>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

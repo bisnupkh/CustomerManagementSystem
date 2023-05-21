@@ -1,0 +1,40 @@
+﻿@model Customer
+
+<div class="container-fluid">
+
+
+<div class="row mt-3">
+    <h3 class="bg-black text-light text-center">Add User</h3>
+    <div class="col-md-6">
+        <form asp-action="CreateUser" method="post">
+            <div class="row">
+                <div class="col">
+                  <label asp-for="Customer_Name" class="form-label"></label>
+                <input asp-for="Customer_Name" class="form-control"/>
+                </div>
+                    <span asp-validation-for="Customer_Name" class="text-danger"></span>
+            </div>
+                <div class="row">
+                    <div class="col">
+                        <label asp-for="Customer_Email" class="form-label "></label>
+                        <input asp-for="Customer_Email" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Customer_Email" class="text-danger"></span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label asp-for="Customer_Phone" class="form-label"></label>
+                        <input asp-for="Customer_Phone" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Customer_Phone"class="text-danger"></span>
+                </div>
+                <div class="mt-2">
+
+                
+                <button type="submit" class="btn btn-primary ">Create</button>
+                </div>
+        </form>
+    </div>
+</div>
+
+</div>

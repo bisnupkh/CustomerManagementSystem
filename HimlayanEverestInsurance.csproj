@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="obj\**" />
+    <Content Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net6.0\appsettings.Development.json" />
+    <Content Include="bin\Debug\net6.0\appsettings.json" />
+    <Content Include="bin\Debug\net6.0\HimlayanEverestInsurance.deps.json" />
+    <Content Include="bin\Debug\net6.0\HimlayanEverestInsurance.runtimeconfig.json" />
+    <Content Include="bin\Debug\net6.0\HimlayanEverestInsurance.staticwebassets.runtime.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0\HimlayanEverestInsurance.dll" />
+    <None Include="bin\Debug\net6.0\HimlayanEverestInsurance.exe" />
+    <None Include="bin\Debug\net6.0\HimlayanEverestInsurance.pdb" />
+    <None Include="bin\Debug\net6.0\Humanizer.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Debug\net6.0\Npgsql.dll" />
+    <None Include="bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll" />
+    <None Include="wwwroot\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\css\bootstrap-grid.rtl.css.map" />
+    <None Include="wwwroot\css\bootstrap-grid.rtl.min.css.map" />
+    <None Include="wwwroot\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\css\bootstrap-reboot.rtl.css.map" />
+    <None Include="wwwroot\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Include="wwwroot\css\bootstrap-utilities.css.map" />
+    <None Include="wwwroot\css\bootstrap-utilities.min.css.map" />
+    <None Include="wwwroot\css\bootstrap-utilities.rtl.css.map" />
+    <None Include="wwwroot\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Include="wwwroot\css\bootstrap.css.map" />
+    <None Include="wwwroot\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\css\bootstrap.rtl.css.map" />
+    <None Include="wwwroot\css\bootstrap.rtl.min.css.map" />
+    <None Include="wwwroot\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\js\bootstrap.esm.js" />
+    <None Include="wwwroot\js\bootstrap.esm.js.map" />
+    <None Include="wwwroot\js\bootstrap.esm.min.js" />
+    <None Include="wwwroot\js\bootstrap.esm.min.js.map" />
+    <None Include="wwwroot\js\bootstrap.js" />
+    <None Include="wwwroot\js\bootstrap.js.map" />
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\bootstrap.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
